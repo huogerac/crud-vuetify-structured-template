@@ -1,13 +1,13 @@
 <template>
   <v-card>
     <v-card-text>
-      <div>#{{ id }}</div>
-      <p class="ma-0 pa-0 text-h5 text--primary">{{ title }}</p>
+      <div>#\{{ id }}</div>
+      <p class="ma-0 pa-0 text-h5 text--primary">\{{ title }}</p>
     </v-card-text>
     <v-card-actions>
       <v-list-item class="grow">
         <v-list-item-content>
-          <v-list-item-title>Last update: {{ dueTo }}</v-list-item-title>
+          <v-list-item-title>Last update: \{{ dueTo }}</v-list-item-title>
         </v-list-item-content>
 
         <v-row align="center" justify="end">

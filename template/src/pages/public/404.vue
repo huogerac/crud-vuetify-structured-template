@@ -8,10 +8,10 @@
           src="../../assets/404_notfound.svg"
         ></v-img>
         <span class="pa-4">
-          <h2 class="text-center">Página não encontrada</h2>
+          <h2 class="text-center">Page not found!</h2>
         </span>
         <v-btn block color="secondary" class="mr-4" x-large @click="home"
-          >Página inicial <v-icon class="pl-3">fa-arrow-right</v-icon></v-btn
+          >Home <v-icon class="pl-3">fa-arrow-right</v-icon></v-btn
         >
       </v-col>
     </v-row>

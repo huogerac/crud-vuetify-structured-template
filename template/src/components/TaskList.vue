@@ -48,7 +48,7 @@
 
     <!-- SNACKBAR TOAST -->
     <v-snackbar v-model="snackbar" :vertical="true" :top="true">
-      {{ snackbar_text }}
+      \{{ snackbar_text }}
     </v-snackbar>
   </v-container>
 </template>
