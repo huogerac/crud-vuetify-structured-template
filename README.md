@@ -30,7 +30,4 @@ $ npm run dev   # See the package.json / scripts
 
 ## Screenshots
 
-![Task's list](./screenshots/page1.png#width=100)
-![Create task](./screenshots/page2.png#100x169)
-![Task's list](./screenshots/page3.png#100x169)
-![Error page](./screenshots/page4.png#100x169)
+<img src="https://github.com/huogerac/crud-vuetify-structured-template/raw/master/screenshots/page1.png" width="112"> <img src="https://github.com/huogerac/crud-vuetify-structured-template/raw/master/screenshots/page2.png" width="112"> <img src="https://github.com/huogerac/crud-vuetify-structured-template/raw/master/screenshots/page3.png" width="112"> <img src="https://github.com/huogerac/crud-vuetify-structured-template/raw/master/screenshots/page4.png" width="112">
