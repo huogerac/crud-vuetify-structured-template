@@ -1,0 +1,9 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Hello there, smash the LIKE button if you liked this vue template",
+      "dueTo": "2021-12-31"
+    }
+  ]
+}
