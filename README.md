@@ -15,6 +15,9 @@ $ npm run dev   # See the package.json / scripts
 
 ```
 
+**Note**: The `npm run dev` will run the api mock and vuejs server,
+check the `package.json` out for running separeted which one.
+
 ## What's Included
 
 - VueJS (2) + Vuetify configured
@@ -27,6 +30,39 @@ $ npm run dev   # See the package.json / scripts
 - API Mock (using json-server)
 - Pure components
 - Linter + Code style (Prettier)
+
+## Structure
+
+```
+├── apiMock                👉 The sub-project for the API mock
+│   └── server
+│       db.json            👉 The API data (mock)
+├── public
+│     favicon.ico
+└── src
+    ├── router             👉 #1 App routes
+    │   ├── index.js
+    │   └── tasks.api.js       👉 Routers by context
+    ├── pages              👉 #2 App pages (App pages/views)
+    │   ├── layouts            👉 Pages bases
+    │   │   └── Public.vue
+    │   └── public             👉 Pages by context
+    │       ├── 500.vue
+    │       └── Home.vue
+    ├── components         👉 #3 VueJS components files
+    │   └── visual             👉 Pure components**
+    ├── api                👉 #4 API folder
+    │   ├── index.js
+    │   └── tasks.api.js       👉 API endpoints by context
+    ├── assets
+    │   └── some-image.jpg
+    ├── plugins
+    │   └── vuetify.js
+    ├── package.json
+    ├── .prettierrc.js
+    .
+    .
+```
 
 ## Screenshots
 
