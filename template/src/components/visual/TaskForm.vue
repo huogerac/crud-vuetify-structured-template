@@ -51,7 +51,7 @@ export default {
     valid: false,
     titleRule: [
       (v) => !!v || 'Title is required',
-      (v) => v.split(' ').length > 3 || 'Add an awesome title',
+      (v) => v.split(' ').length > 1 || 'Add a descriptive title',
     ],
   }),
   methods: {
