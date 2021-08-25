@@ -7,7 +7,10 @@
     <v-card-actions>
       <v-list-item class="grow">
         <v-list-item-content>
-          <v-list-item-title>Last update: \{{ dueTo }}</v-list-item-title>
+          <v-list-item-title
+            >Due to: \{{ dueTo | shortDateFilter }}, Last update:
+            \{{ updatedAt | shortDateFilter }}</v-list-item-title
+          >
         </v-list-item-content>
 
         <v-row align="center" justify="end">

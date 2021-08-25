@@ -5,6 +5,10 @@ import vuetify from './plugins/vuetify'
 
 Vue.config.productionTip = false
 
+//filters
+import { shortDateFilter } from './filters/dateFilter'
+Vue.filter('shortDateFilter', shortDateFilter)
+
 new Vue({
   router,
   vuetify,

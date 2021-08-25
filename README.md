@@ -77,6 +77,8 @@ check the `package.json` out for running separeted which one.
     │   └── tasks.api.js       👉 API endpoints by context
     ├── mixins             👉 Anything used cross components
     │   └── ApiResponse.vue
+    ├── filters            👉 VueJS template filters
+    │   └── dateFilter.js
     ├── assets
     │   └── some-image.jpg
     ├── plugins
