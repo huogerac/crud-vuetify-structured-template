@@ -3,7 +3,9 @@
 [![GitHub issues](https://img.shields.io/github/issues/huogerac/crud-vuetify-structured-template?style=for-the-badge)](https://github.com/huogerac/crud-vuetify-structured-template/issues) [![GitHub stars](https://img.shields.io/github/stars/huogerac/crud-vuetify-structured-template?style=for-the-badge)](https://github.com/huogerac/crud-vuetify-structured-template/stargazers) [![GitHub license](https://img.shields.io/github/license/huogerac/crud-vuetify-structured-template?style=for-the-badge)](https://github.com/huogerac/crud-vuetify-structured-template/blob/master/LICENSE) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
 
 > 💻 A full-featured Vuejs + Vuetify + Great structure project template + API Ready
+
 > 👉 It's using latest VueJS 2 and Vuetify 2
+
 > VueJS 3 + Vuetify 3 + Vite is coming soon 😎
 
 ## Requirements
