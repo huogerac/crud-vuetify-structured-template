@@ -36,6 +36,7 @@
       :showDialog="showTaskCreateDialog"
       @onUpdated="taskCreated"
       @onClose="showTaskCreateDialog = false"
+      @onError="showError"
     />
 
     <!-- Update Task Dialog -->
@@ -44,6 +45,7 @@
       :task="task"
       @onUpdated="taskSaved"
       @onClose="showTaskUpdateDialog = false"
+      @onError="showError"
     />
 
     <!-- SNACKBAR TOAST -->
@@ -105,6 +107,10 @@ export default {
       TasksApi.delete(task.id).then(() => {
         this.loadTasks()
       })
+    },
+    showError(error) {
+      this.snackbar_text = error
+      this.snackbar = true
     },
   },
   components: { TaskCard, TaskCreateDialog, TaskUpdateDialog },

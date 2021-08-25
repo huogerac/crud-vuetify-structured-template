@@ -17,10 +17,12 @@
 
 <script>
 import TasksApi from '@/api/tasks.api.js'
+import ApiResponseMixin from '@/mixins/ApiResponseMixin'
 import TaskForm from '@/components/visual/TaskForm'
 
 export default {
   props: ['showDialog'],
+  mixins: [ApiResponseMixin],
   data: () => ({
     task: {
       title: '',
@@ -31,13 +33,6 @@ export default {
     TaskForm,
   },
   methods: {
-    extractErrorFromResponse(error) {
-      let errorText = error
-      if (error && error.response && error.response.status == 400) {
-        errorText = error.response.data.detail || error
-      }
-      return `Opps! ${errorText}`
-    },
     clearFields() {
       this.task.title = ''
       this.task.dueTo = ''

@@ -75,6 +75,8 @@ check the `package.json` out for running separeted which one.
     ├── api                👉 #4 API folder
     │   ├── index.js
     │   └── tasks.api.js       👉 API endpoints by context
+    ├── mixins             👉 Anything used cross components
+    │   └── ApiResponse.vue
     ├── assets
     │   └── some-image.jpg
     ├── plugins
