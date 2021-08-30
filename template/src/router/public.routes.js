@@ -1,7 +1,7 @@
-import Public from '../pages/layouts/Public.vue'
-import Home from '../pages/public/Home.vue'
-import Pagina404 from '../pages/public/404'
-import Pagina500 from '../pages/public/500'
+import Public from '@/pages/layouts/Public.vue'
+import Home from '@/pages/public/Home.vue'
+import Pagina404 from '@/pages/public/404'
+import Pagina500 from '@/pages/public/500'
 
 export default [
   {
