@@ -15,6 +15,7 @@ Check the links below out for more details:
 
 - [Node with NVM - Script for any ubuntu based distribution](https://github.com/huogerac/dev-tools/blob/master/elementaryos5/03_install_node.sh)
 - [Install Node.js with NVM](https://heynode.com/tutorial/install-nodejs-locally-nvm)
+- For Windows users, the [NodeJs.org](https://nodejs.org/en/) might help
 
 ## Quick start
 
@@ -60,6 +61,9 @@ check the `package.json` out for running separeted which one.
 │       db.json            👉 The API data (mock)
 ├── public
 │     favicon.ico
+├── package.json           👉 Project/Package Manifest
+├── .prettierrc.js         👉 Code Style
+├── .env                   👉 Set environment var for development
 └── src
     ├── router             👉 #1 App routes
     │   ├── index.js
@@ -81,12 +85,9 @@ check the `package.json` out for running separeted which one.
     │   └── dateFilter.js
     ├── assets
     │   └── some-image.jpg
-    ├── plugins
-    │   └── vuetify.js
-    ├── package.json
-    ├── .prettierrc.js
-    .
-    .
+    └── plugins
+      └── vuetify.js
+
 ```
 
 ## Screenshots
@@ -106,3 +107,7 @@ Any help is more than welcome...
 ## Alternatives ⚙️
 
 - If you know great vuejs project templates, please, add it here
+
+## Extra Documentation
+
+- https://huogerac.hashnode.dev/a-great-way-to-structure-and-bootstrap-vuejs-vuetify-api-projects
