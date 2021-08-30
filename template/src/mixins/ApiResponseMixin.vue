@@ -3,6 +3,7 @@ export default {
   methods: {
     extractErrorFromResponse(error) {
       /**
+       * @see mixins/README.md
        * The API must have an error message standard
        * This method will extract those to something more meaningfull
        * Example:
