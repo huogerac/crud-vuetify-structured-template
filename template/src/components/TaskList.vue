@@ -57,7 +57,7 @@
 
 <script>
 import TasksApi from '@/api/tasks.api.js'
-import TaskCard from './visual/TaskCard.vue'
+import TaskCard from './TaskCard.vue'
 import TaskCreateDialog from '@/components/TaskCreateDialog.vue'
 import TaskUpdateDialog from '@/components/TaskUpdateDialog.vue'
 

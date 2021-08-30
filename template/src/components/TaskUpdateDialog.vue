@@ -18,7 +18,7 @@
 <script>
 import TasksApi from '@/api/tasks.api.js'
 import ApiResponseMixin from '@/mixins/ApiResponseMixin'
-import TaskForm from '@/components/visual/TaskForm'
+import TaskForm from '@/components/TaskForm'
 
 export default {
   props: ['showDialog', 'task'],

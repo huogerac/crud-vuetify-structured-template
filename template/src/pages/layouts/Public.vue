@@ -1,5 +1,5 @@
 <script>
-import Footer from '@/components/visual/Footer.vue'
+import Footer from '@/components/Footer.vue'
 export default {
   data: () => ({}),
   components: {

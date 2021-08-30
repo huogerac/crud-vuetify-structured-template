@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import AppBar from '@/components/visual/AppBar.vue'
+import AppBar from '@/components/AppBar.vue'
 import TaskList from '@/components/TaskList.vue'
 
 export default {
