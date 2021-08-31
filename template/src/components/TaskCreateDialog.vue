@@ -8,6 +8,7 @@
     >
       <task-form
         :task="task"
+        :loading="loading"
         @onSave="createTask"
         @onClose="$emit('onClose')"
       ></task-form>
@@ -24,6 +25,7 @@ export default {
   props: ['showDialog'],
   mixins: [ApiResponseMixin],
   data: () => ({
+    loading: false,
     task: {
       title: '',
       dueTo: '',
@@ -38,6 +40,7 @@ export default {
       this.task.dueTo = ''
     },
     createTask(task) {
+      this.loading = true
       TasksApi.create(task.title, task.dueTo)
         .then(() => {
           this.$emit('onUpdated')
@@ -45,6 +48,8 @@ export default {
         })
         .catch((error) => {
           this.$emit('onError', this.extractErrorFromResponse(error))
+        }).finally(() => {
+          this.loading = false
         })
     },
   },

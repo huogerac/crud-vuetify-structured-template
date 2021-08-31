@@ -7,7 +7,7 @@
       <v-toolbar-title>Task</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-btn dark text @click="onSave" :disabled="!valid">
+        <v-btn dark text @click="onSave" :disabled="!valid" :loading="loading">
           <v-icon class="px-2">far fa-save</v-icon> Save
         </v-btn>
       </v-toolbar-items>
@@ -46,7 +46,7 @@
 
 <script>
 export default {
-  props: ['task'],
+  props: ['task', 'loading'],
   data: () => ({
     valid: false,
     titleRule: [

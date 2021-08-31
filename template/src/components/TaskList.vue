@@ -8,19 +8,36 @@
       </v-col>
     </v-row>
 
-    <v-row>
+    <v-row
+      v-if="loading"
+      class="fill-height"
+      align-content="center"
+      justify="center"
+    >
+      <v-col class="text-subtitle-1 text-center" cols="12">
+        Getting list...
+      </v-col>
+      <v-col cols="6">
+        <v-progress-linear
+          color="blue accent-4"
+          indeterminate
+          rounded
+          height="6"
+        ></v-progress-linear>
+      </v-col>
+    </v-row>
+
+    <v-row v-if="!loading">
       <v-col class="pa-1" cols="12" v-for="task in tasks" :key="task.id">
         <task-card
-          :id="task.id"
-          :title="task.title"
-          :description="task.description"
+          :task="task"
           @onEdit="editTask"
           @onRemove="removeTask"
         ></task-card>
       </v-col>
     </v-row>
 
-    <v-row class="pa-5">
+    <v-row v-if="!loading" class="pa-5">
       <v-col cols="12">
         <div v-if="tasks && tasks.length == 0">
           <h2>Your list is empty 🥺</h2>

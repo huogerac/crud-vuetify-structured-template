@@ -8,6 +8,7 @@
     >
       <task-form
         :task="task"
+        :loading="loading"
         @onSave="updateTask"
         @onClose="$emit('onClose')"
       ></task-form>
@@ -22,18 +23,24 @@ import TaskForm from '@/components/TaskForm'
 
 export default {
   props: ['showDialog', 'task'],
+  data: () => ({
+    loading: false
+  }),
   mixins: [ApiResponseMixin],
   components: {
     TaskForm,
   },
   methods: {
     updateTask(task) {
+      this.loading = true
       TasksApi.update(task.id, task.title, task.dueTo)
         .then(() => {
           this.$emit('onUpdated')
         })
         .catch((error) => {
           this.$emit('onError', this.extractErrorFromResponse(error))
+        }).finally(()=>{
+          this.loading = false
         })
     },
   },

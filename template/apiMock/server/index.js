@@ -28,7 +28,24 @@ server.use((req, res, next) => {
   }
 })
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+server.use((req, res, next) => {
+  if (config.SLEEP && config.SLEEP > 0) {
+    sleep(config.SLEEP).then(() => {
+      next()
+    })
+  } else {
+    next()
+  }
+})
+
 server.use(router)
 server.listen(config.PORT, () => {
+  if (config.SLEEP) {
+    console.log(`SLEEP MODE: ${config.SLEEP}ms delay`)
+  }
   console.log(`🚀 JSON Server is running on http://localhost:${config.PORT}`)
 })
