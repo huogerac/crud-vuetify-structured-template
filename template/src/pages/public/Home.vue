@@ -2,16 +2,10 @@
   <v-main class="overflow-hidden">
     <app-bar
       :background="'https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg'"
+      @OnAdd="createTask"
     ></app-bar>
 
     <v-container>
-      <v-row>
-        <v-col cols="12">
-          <v-btn class="ma-2" outlined small color="indigo" @click="createTask"
-            >New</v-btn
-          >
-        </v-col>
-      </v-row>
 
       <v-row
         v-if="loading"
