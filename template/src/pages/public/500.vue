@@ -38,8 +38,7 @@ export default {
     error: '',
   }),
   created() {
-    this.error =
-      this.$route.params.error || 'Network error. Try later...'
+    this.error = this.$route.params.error || 'Network error. Try later...'
   },
   methods: {
     home() {

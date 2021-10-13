@@ -6,7 +6,6 @@
     ></app-bar>
 
     <v-container>
-
       <v-row
         v-if="loading"
         class="fill-height"
@@ -69,7 +68,6 @@
         \{{ snackbar_text }}
       </v-snackbar>
     </v-container>
-
   </v-main>
 </template>
 
