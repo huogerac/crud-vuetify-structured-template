@@ -48,7 +48,8 @@ export default {
         })
         .catch((error) => {
           this.$emit('onError', this.extractErrorFromResponse(error))
-        }).finally(() => {
+        })
+        .finally(() => {
           this.loading = false
         })
     },

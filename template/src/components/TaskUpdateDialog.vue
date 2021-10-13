@@ -24,7 +24,7 @@ import TaskForm from '@/components/TaskForm'
 export default {
   props: ['showDialog', 'task'],
   data: () => ({
-    loading: false
+    loading: false,
   }),
   mixins: [ApiResponseMixin],
   components: {
@@ -39,7 +39,8 @@ export default {
         })
         .catch((error) => {
           this.$emit('onError', this.extractErrorFromResponse(error))
-        }).finally(()=>{
+        })
+        .finally(() => {
           this.loading = false
         })
     },
