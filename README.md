@@ -73,8 +73,8 @@ check the `package.json` out for running separeted which one.
     │   │   └── Public.vue
     │   └── public             👉 Pages by context
     │       ├── 500.vue
-    │       └── Home.vue
-    ├── components         👉 #3 VueJS components files
+    │       └── Home.vue       👉 VueJS "SMART" components
+    ├── components         👉 #3 VueJS "DUMP" components
     │   └── visual             👉 Pure components**
     ├── api                👉 #4 API folder
     │   ├── index.js
