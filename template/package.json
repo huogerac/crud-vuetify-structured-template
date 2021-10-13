@@ -7,7 +7,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "lint": "vue-cli-service lint --no-fix",
+    "lint:fix": "vue-cli-service lint",
     "api:mock": "node apiMock/server",
     "api:mock:slow": "API_SLEEP=2000 node apiMock/server",
     "dev": "concurrently -n mock,server -k \"npm:api:mock\" \"npm run serve\""
@@ -45,12 +46,15 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "@vue/prettier"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "prettier/prettier": "error"
+    }
   },
   "browserslist": [
     "> 1%",
